@@ -48,3 +48,81 @@ We are going to utilize the micro:bit Python V2 web editor to design our project
 
 ## STEP 6: Click Backspace On Keyboard To Delete Sample Code
 ![image](https://github.com/mytechnotalent/MicroPython-micro-bit_Study_Buddy/blob/main/STEP%206.png?raw=true)
+
+## STEP 7: Copy Study Buddy Python Code Template Into Python Web Editor
+```python
+import gc
+import time
+
+from microbit import display, Image
+from speech import say
+
+
+def generic_bot(question):
+    """Bot function
+
+    Parameters
+    ----------
+    question : str
+        Question to parse for trigger words
+
+    Returns
+    -------
+    None
+    """
+    # Our Python dictionary which is a database
+    # and here is where we can type in new key/value
+    # pairs or in our case trigger word or words and
+    # then a response
+    db = {
+            'your name': 'My name is Mr. George.',
+            'food': 'I like pizza.',
+         }
+
+
+    # Init LED happy image 
+    display.show(Image.HAPPY)
+
+    # This is an advanced topic as well however this little function
+    # cleans out the unnecessary global objects or variables on what
+    # we call the heap area in memory
+    gc.collect()
+    
+    # Init response object
+    response = ''
+    
+    # We want to make sure that our dictionary database can 
+    # find all values even if you use a capital letter
+    # so we convert everything to lowercase 
+    question = question.lower()
+    
+    # If you type something other than an empty string that means 
+    # question has a value so the rest of the code will continue
+    # on
+    if question:
+        # This is a bit complicated do not worry about this for now
+        # all this is doing is looking through our dictionary database
+        # and seeing if our input value has the word or words which
+        # match an entry in the dictionary database and if it does
+        # put the value in the _response object
+        response = [val for key, val in db.items() if key in question]
+        
+        gc.collect()
+        
+        # If our bot got a response from us then make sure
+        # we trigger the speaking or suprised image so our bot
+        # can open its mouth to talk and then have our bot
+        # talk to us in our REPL and by hearing it speak as well
+        # and if the user types in a trigger work that is not 
+        # recognized then provide a custom default response
+        if response:
+            display.show(Image.SURPRISED)
+            print('BOT: {0}'.format(response[0]))
+            say(str(response[0]))
+            display.show(Image.HAPPY)
+        else:
+            display.show(Image.SURPRISED)
+            print('BOT: That is not a state or state capital I am familiar with.')
+            say('That is not a state or state capital I am familiar with.')
+            display.show(Image.HAPPY)
+```
