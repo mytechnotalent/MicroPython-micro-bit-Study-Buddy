@@ -24,6 +24,10 @@ The student will then be able to work with the micro:bit TED on their own to hel
 
 We are going to utilize the micro:bit Python V2 web editor to design our project with detailed steps to help any educator regardless of their background or comfort level to implement this feature.
 
+We will begin with a Study Buddy template example to experiment with so that we can get familiar with the framework.
+
+We will then create a fully-featured Study Buddy application which encompasses both the state capital curriculum and the parts of a cell curriculum demonstrating the multi-curriculum architecture of the micro:bit V2!
+
 ## Schematic
 ![image](https://github.com/mytechnotalent/MicroPython-micro-bit_Study_Buddy/blob/main/schematic.png?raw=true)
 
