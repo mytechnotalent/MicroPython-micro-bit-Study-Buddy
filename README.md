@@ -8,3 +8,6 @@ The micro:bit Study Buddy is an educational engagement tool designed to help stu
 Over the next 10 years we are going to see a fundamental transformation of technology in a way never before seen in history.  
 
 Future careers will look very different than they do today to which literally every opportunity will include the usage of a microcontroller in combination with an automation engine and the skills necessary to adapt to this new paradigm.
+
+With this landscape directly over the horizon we need to empower our Educators, the single more important group of leaders in the twenty-first century, with the tools necessary to inspire and engage the next generation of makers in an exciting new way.
+
