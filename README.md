@@ -325,4 +325,7 @@ def generic_quiz_m():
 ```
 ![image](https://github.com/mytechnotalent/MicroPython-micro-bit_Study_Buddy/blob/main/STEP%207.png?raw=true)
 
-## STEP 8: 
+## STEP 8: Rename Script Name To sb_template
+![image](https://github.com/mytechnotalent/MicroPython-micro-bit_Study_Buddy/blob/main/STEP%208.png?raw=true)
+
+
