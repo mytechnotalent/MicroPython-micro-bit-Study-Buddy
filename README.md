@@ -334,3 +334,5 @@ def generic_quiz_m():
 ## STEP 10: Click Download Python Script
 ![image](https://github.com/mytechnotalent/MicroPython-micro-bit_Study_Buddy/blob/main/STEP%2010.png?raw=true)
 
+## STEP 11: Click Flash
+![image](https://github.com/mytechnotalent/MicroPython-micro-bit_Study_Buddy/blob/main/STEP%2011.png?raw=true)
