@@ -31,7 +31,7 @@ We are going to utilize the micro:bit Python V2 web editor to design our project
 [micro:bit](COMING NOVEMBER 2020)
 
 ## STEP 1: Navigate To The FREE micro:bit Python Web Editor
-[micro:bit Python Web Editor](https://python.microbit.org/v/beta)<br>
+[micro:bit Python Web Editor](https://python.microbit.org/v/beta)<br><br>
 ![image](https://github.com/mytechnotalent/MicroPython-micro-bit_Study_Buddy/blob/main/STEP%201.png?raw=true)
 
 ## STEP 2: Plug micro:bit V2 Into Computer
