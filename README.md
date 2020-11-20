@@ -2,7 +2,7 @@
 
 # MicroPython-micro-bit
 # Study Buddy
-The micro:bit Study Buddy is an Electronic Educational Engagement Tool designed to help students learn a new classroom subject with the assistance of a micro:bit TED (Talking Educational Database) and a micro:bit TEQ (Talking Educational Quiz).
+The micro:bit Study Buddy is a micro:bit Electronic Educational Engagement Tool designed to help students learn a new classroom subject with the assistance of a micro:bit TED (Talking Educational Database) and a micro:bit TEQ (Talking Educational Quiz).
 
 ## Mission Statement
 Over the next 10 years we are going to see a fundamental transformation of technology in a way never before seen in history.  
@@ -11,4 +11,12 @@ Future careers will look very different than they do today to which literally ev
 
 With this landscape directly over the horizon we need to empower our Educators, the single more important group of leaders in the twenty-first century, with the tools necessary to inspire and engage the next generation of makers in an exciting new way.
 
-Today is born the concept of an Electronic Educational Engagement Tool to connect with students in a very emotional and inpiring way which will help solidify classroom subject curriculum in a significantly enhanced timeframe in addition to preparing these future leaders with the software engineering fundamanetls necessary to compete in tomorrow's economy.
+Today is born the concept of a micro:bit Electronic Educational Engagement Tool to connect with students in a very emotional and inspiring way which will help solidify classroom subject curriculum in a significantly enhanced time frame in addition to preparing these future leaders with the software engineering fundamentals necessary to compete in tomorrow's economy.
+
+The micro:bit Electronic Educational Engagement Tool is comprised of a micro:bit TED (Talking Educational Database) and a micro:bit TEQ (Talking Educational Quiz) to enhance Educators world-wide with the curriculum integration to take their students to the next level.
+
+## Project Hypothetical
+YOU are a History and Biology Educator and are about to teach your students the 50 state capitals of the US in your history curriculum in addition to parts of a cell in your biology curriculum.  YOU now have a grant and with that grant a micro:bit V2 for each student and YOU get to take advantage of the micro:bit EEET (Electronic Educational Engagement Tool) to integrate into your curriculum!
+
+YOU follow the steps below and very easily see how YOU can integrate this technology in a way NEVER done in history!  YOU will be able to BRING TO LIFE a micro:bit TED (Talking Educational Database) or talking chat bot that can help the student learn the 50 state capitols and the parts of a cell as it makes facial animations and literally talks to the student!
+
