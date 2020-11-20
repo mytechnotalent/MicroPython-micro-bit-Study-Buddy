@@ -364,5 +364,22 @@ You got 2 out of 2 correct!
 You got a perfect score!
 Well done!
 I am so proud of you!
+>>>
+>>> main.generic_quiz_m()
+What is our bot's name?
+Press A for Mr. George.
+Touch the logo for Ms. Henry.
+Press B for Mr. Atencio.
+You selected Ms. Henry.
+The correct answer is Mr. George.
+What is Mr. George's favorite food?
+Press A for chocolate.
+Touch the logo for nachos.
+Press B for pizza.
+You selected pizza.
+CORRECT!
+You got 1 out of 2 correct!
+You are doing a great job!
+I would LOVE for you to try again!
 >>> 
 ```
