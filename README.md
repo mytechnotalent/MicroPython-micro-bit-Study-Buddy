@@ -42,3 +42,9 @@ We are going to utilize the micro:bit Python V2 web editor to design our project
 
 ## STEP 4: Click "BBC micro:bit CMSIS-DAP" & CONNECT
 ![image](https://github.com/mytechnotalent/MicroPython-micro-bit_Study_Buddy/blob/main/STEP%204.png?raw=true)
+
+## STEP 5: Highlight Sample Code - Select All
+![image](https://github.com/mytechnotalent/MicroPython-micro-bit_Study_Buddy/blob/main/STEP%205.png?raw=true)
+
+## STEP 6: Click Backspace On Keyboard To Delete Sample Code
+![image](https://github.com/mytechnotalent/MicroPython-micro-bit_Study_Buddy/blob/main/STEP%206.png?raw=true)
