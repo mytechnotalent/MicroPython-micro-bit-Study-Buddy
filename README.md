@@ -20,3 +20,5 @@ YOU are a History and Biology Educator and are about to teach your students the 
 
 YOU follow the steps below and very easily see how YOU can integrate this technology in a way NEVER done in history!  YOU will be able to BRING TO LIFE a micro:bit TED (Talking Educational Database) or talking chat bot that can help the student learn the 50 state capitols and the parts of a cell as it makes facial animations and literally talks to the student!
 
+The student will then be able to work with the micro:bit TED on their own to help strengthen their curriculum concept development and then be able to take the micro:bit TEQ to help them prepare for the subject exam or test.  They can engage the TED and TEQ on demand and help build their confidence and comfort level of the subject matter in a revolutionary new way!
+
