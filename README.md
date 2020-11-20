@@ -323,3 +323,6 @@ def generic_quiz_m():
     # Display happy response at the end of the quiz
     display.show(Image.HAPPY)
 ```
+![image](https://github.com/mytechnotalent/MicroPython-micro-bit_Study_Buddy/blob/main/STEP%207.png?raw=true)
+
+## STEP 8: 
