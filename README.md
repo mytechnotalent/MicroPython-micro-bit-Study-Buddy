@@ -283,6 +283,9 @@ def generic_quiz_m():
             else:
                 pass
         correct_answer = db[key][3]
+        print('You selected {0}.'.format(db[key][response]))
+        say('You selected')
+        say(str(db[key][response]))
         if response == correct_answer:
             display.show(Image.SURPRISED)
             print('CORRECT!')
