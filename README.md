@@ -122,8 +122,8 @@ def generic_bot(question):
             display.show(Image.HAPPY)
         else:
             display.show(Image.SURPRISED)
-            print('BOT: That is not a state or state capital I am familiar with.')
-            say('That is not a state or state capital I am familiar with.')
+            print('BOT: That is not something I am familiar with.')
+            say('That is not something I am familiar with.')
             display.show(Image.HAPPY)
             
             
@@ -336,3 +336,29 @@ def generic_quiz_m():
 
 ## STEP 11: Click Flash
 ![image](https://github.com/mytechnotalent/MicroPython-micro-bit_Study_Buddy/blob/main/STEP%2011.png?raw=true)
+
+## STEP 12: Click Open Serial
+![image](https://github.com/mytechnotalent/MicroPython-micro-bit_Study_Buddy/blob/main/STEP%2012.png?raw=true)
+
+## STEP 13: Communicate With The micro:bit Generic TED Bot & Take Fill In The Blank Quiz, Multiple-Choice Quiz
+```
+>>> import main
+>>> main.generic_bot('What is your name?')
+BOT: My name is Mr. George.
+>>> main.generic_bot('What is your favorite food?')
+BOT: I like pizza.
+>>> main.generic_bot('What is your favorite song?')
+BOT: That is not something I am familiar with.
+>>> main.generic_quiz_f()
+What is our bot's name?
+ANSWER: Mr. George
+CORRECT!
+What is Mr. George's favorite food?
+ANSWER: pizza
+CORRECT!
+You got 2 out of 2 correct!
+You got a perfect score!
+Well done!
+I am so proud of you!
+>>> 
+```
