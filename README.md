@@ -54,7 +54,7 @@ We are going to utilize the micro:bit Python V2 web editor to design our project
 import gc
 import time
 
-from microbit import display, Image
+from microbit import display, Image, pin_logo, button_a, button_b
 from speech import say
 
 
@@ -78,7 +78,6 @@ def generic_bot(question):
             'your name': 'My name is Mr. George.',
             'food': 'I like pizza.',
          }
-
 
     # Init LED happy image 
     display.show(Image.HAPPY)
@@ -125,4 +124,199 @@ def generic_bot(question):
             print('BOT: That is not a state or state capital I am familiar with.')
             say('That is not a state or state capital I am familiar with.')
             display.show(Image.HAPPY)
+            
+            
+def generic_quiz_f():
+    """Fill in the blank quiz function
+
+    Parameters
+    ----------
+    None
+
+    Returns
+    -------
+    None
+    """
+    # Our Python dictionary which is a database
+    # and here is where we can type in new key/value
+    # pairs or in our case trigger word or words and
+    # then a response
+    db = {
+            'What is our bot\'s name?': 'Mr. George',
+            'What is Mr. George\'s favorite food?': 'pizza',
+         }
+
+    # Init LED happy image 
+    display.show(Image.HAPPY)
+
+    # This is an advanced topic as well however this little function
+    # cleans out the unnecessary global objects or variables on what
+    # we call the heap area in memory
+    gc.collect()
+    
+    # Init score object
+    score = 0
+    
+    # Here we iterate through our quiz database
+    for key in db:
+        print(key)
+        say(str(key))
+        response = input('ANSWER: ')
+        response = response.lower()
+        correct_answer = db[key].lower()
+        print(response)
+        print(correct_answer)
+        if response == correct_answer:
+            display.show(Image.SURPRISED)
+            print('CORRECT!')
+            say('CORRECT!')
+            display.show(Image.HAPPY)
+            score += 1
+        else:
+            display.show(Image.SURPRISED)
+            print('The correct answer is {0}.'.format(db[key]))
+            say('The correct answer is')
+            say(str(db[key]))
+            display.show(Image.HAPPY)
+        gc.collect()
+    
+    # Here we reply to the student their score
+    display.show(Image.SURPRISED)
+    print('You got {0} out of {1} correct!'.format(score, len(db)))
+    say('You got')
+    say(str(score))
+    say('out of')
+    say(str(len(db)))
+    say('correct!')
+    
+    # If student got a perfect score respond appropriately
+    # or provide an encouring message to retry the quiz
+    if score == len(db):
+        print('You got a perfect score!')
+        say('You got a perfect score!')
+        print('Well done!')
+        say('Well done!')
+        print('I am so proud of you!')
+        say('I am so proud of you!')
+    else:
+        print('You are doing a great job!')
+        say('You are doing a great job!')
+        print('I would LOVE for you to try again!')
+        say('I would LOVE for you to try again!')
+        
+    # Display happy response at the end of the quiz
+    display.show(Image.HAPPY)
+    
+    
+def generic_quiz_m():
+    """Multiple choice quiz function
+
+    Parameters
+    ----------
+    None
+
+    Returns
+    -------
+    None
+    """
+    # Our Python dictionary which is a database
+    # and here is where we can type in new key/value
+    # pairs or in our case trigger word or words and
+    # then a response
+    db = {
+            'What is our bot\'s name?': [
+                                            'Mr. George', 
+                                            'Ms. Henry', 
+                                            'Mr. Atencio', 
+                                            0
+                                        ],
+            'What is Mr. George\'s favorite food?': [
+                                                        'chocolate', 
+                                                        'nachos', 
+                                                        'pizza', 
+                                                        2
+                                                    ]
+         }
+
+    # Init LED happy image 
+    display.show(Image.HAPPY)
+
+    # This is an advanced topic as well however this little function
+    # cleans out the unnecessary global objects or variables on what
+    # we call the heap area in memory
+    gc.collect()
+    
+    # Init response object
+    response = ''
+    
+    # Init score object
+    score = 0
+    
+    # Here we iterate through our quiz database with multiple
+    # choice items
+    for key in db:
+        display.show(Image.SURPRISED)
+        print(key)
+        say(str(key))
+        print('Press A for {0}.'.format(db[key][0]))
+        say('Press A for')
+        say(str(db[key][0]))
+        print('Touch the logo for {0}.'.format(db[key][1]))
+        say('Touch the logo for')
+        say(str(db[key][1]))
+        print('Press B for {0}.'.format(db[key][2]))
+        say('Press B for')
+        say(str(db[key][2]))
+        display.show(Image.HAPPY)
+        while not button_a.is_pressed() and not pin_logo.is_touched() and not button_b.is_pressed():
+            if button_a.is_pressed():
+                response = 0
+                break
+            elif pin_logo.is_touched():
+                response = 1
+                break
+            elif button_b.is_pressed():
+                response = 2
+                break
+        correct_answer = db[key][3]
+        if response == correct_answer:
+            display.show(Image.SURPRISED)
+            print('CORRECT!')
+            say('CORRECT!')
+            display.show(Image.HAPPY)
+            score += 1
+        else:
+            display.show(Image.SURPRISED)
+            print('The correct answer is {0}.'.format(db[key][correct_answer]))
+            say('The correct answer is')
+            say(str(db[key][correct_answer]))
+            display.show(Image.HAPPY)
+        gc.collect()
+    
+    # Here we reply to the student their score
+    display.show(Image.SURPRISED)
+    print('You got {0} out of {1} correct!'.format(score, len(db)))
+    say('You got')
+    say(str(score))
+    say('out of')
+    say(str(len(db)))
+    say('correct!')
+    
+    # If student got a perfect score respond appropriately
+    # or provide an encouring message to retry the quiz
+    if score == len(db):
+        print('You got a perfect score!')
+        say('You got a perfect score!')
+        print('Well done!')
+        say('Well done!')
+        print('I am so proud of you!')
+        say('I am so proud of you!')
+    else:
+        print('You are doing a great job!')
+        say('You are doing a great job!')
+        print('I would LOVE for you to try again!')
+        say('I would LOVE for you to try again!')
+        
+    # Display happy response at the end of the quiz
+    display.show(Image.HAPPY)
 ```
