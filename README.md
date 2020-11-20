@@ -356,6 +356,7 @@ BOT: My name is Mr. George.
 BOT: I like pizza.
 >>> main.generic_bot('What is your favorite song?')
 BOT: That is not something I am familiar with.
+>>>
 >>> main.generic_quiz_f()
 What is our bot's name?
 ANSWER: Mr. George
