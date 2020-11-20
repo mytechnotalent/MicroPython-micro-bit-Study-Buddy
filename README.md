@@ -126,7 +126,9 @@ def generic_bot(question):
             say('That is not something I am familiar with.')
             display.show(Image.HAPPY)
             
-            
+    gc.collect()
+        
+        
 def generic_quiz_f():
     """Fill in the blank quiz function
 
@@ -165,8 +167,6 @@ def generic_quiz_f():
         response = input('ANSWER: ')
         response = response.lower()
         correct_answer = db[key].lower()
-        print(response)
-        print(correct_answer)
         if response == correct_answer:
             display.show(Image.SURPRISED)
             print('CORRECT!')
@@ -209,6 +209,8 @@ def generic_quiz_f():
     # Display happy response at the end of the quiz
     display.show(Image.HAPPY)
     
+    gc.collect()
+    
     
 def generic_quiz_m():
     """Multiple choice quiz function
@@ -248,9 +250,6 @@ def generic_quiz_m():
     # we call the heap area in memory
     gc.collect()
     
-    # Init response object
-    response = ''
-    
     # Init score object
     score = 0
     
@@ -270,7 +269,8 @@ def generic_quiz_m():
         say('Press B for')
         say(str(db[key][2]))
         display.show(Image.HAPPY)
-        while not button_a.is_pressed() and not pin_logo.is_touched() and not button_b.is_pressed():
+        #response = ''
+        while True:
             if button_a.is_pressed():
                 response = 0
                 break
@@ -280,6 +280,8 @@ def generic_quiz_m():
             elif button_b.is_pressed():
                 response = 2
                 break
+            else:
+                pass
         correct_answer = db[key][3]
         if response == correct_answer:
             display.show(Image.SURPRISED)
@@ -322,6 +324,8 @@ def generic_quiz_m():
         
     # Display happy response at the end of the quiz
     display.show(Image.HAPPY)
+    
+    gc.collect()
 ```
 ![image](https://github.com/mytechnotalent/MicroPython-micro-bit_Study_Buddy/blob/main/STEP%207.png?raw=true)
 
