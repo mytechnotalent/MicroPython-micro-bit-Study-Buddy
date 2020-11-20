@@ -55,6 +55,7 @@ import gc
 import time
 
 from microbit import display, Image, pin_logo, button_a, button_b
+from music import play, POWER_UP
 from speech import say
 
 
@@ -198,6 +199,7 @@ def generic_quiz_f():
         say('Well done!')
         print('I am so proud of you!')
         say('I am so proud of you!')
+        play(POWER_UP)
     else:
         print('You are doing a great job!')
         say('You are doing a great job!')
@@ -311,6 +313,7 @@ def generic_quiz_m():
         say('Well done!')
         print('I am so proud of you!')
         say('I am so proud of you!')
+        play(POWER_UP)
     else:
         print('You are doing a great job!')
         say('You are doing a great job!')
