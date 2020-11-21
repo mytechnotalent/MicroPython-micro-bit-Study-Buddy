@@ -393,7 +393,7 @@ Go into the Python Web Editor and select line 13.  Press enter to create a new b
 ```python
 ...
 # State capital talking educational database
-sc = {
+sc_ted = {
             'alabama': 'The capital of Alabama is Montgomery.',
             'montgomery': 'Montgomery is the capital of Alabama.',
             'alaska': 'The capital of Alaska is Juneau.',
@@ -493,6 +493,6 @@ sc = {
             'madison': 'Madison is the capital of Wisconsin.',
             'wyoming': 'The capital of Wyoming is Cheyenne.',
             'cheyenne': 'Cheyenne is the capital of Wyoming.',
-     }
+         }
 ...
 ```
