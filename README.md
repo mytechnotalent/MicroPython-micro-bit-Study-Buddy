@@ -617,3 +617,21 @@ poc_ted = {
             'centrioles': 'Centrioles helps in cell division in animals.'
           }
 ```
+
+## STEP 19: Populate Our Parts Of A Cell Fill In The Blank Quiz
+Go into the Python Web Editor and select line 245.  Press enter to create a new blank line and paste the following on the new blank line 246.
+```python
+# Parts of a cell talking educational fill in the blank quiz database
+poc_teq_f = {
+                'What controls the cell\'s operations?': 'nucleus',
+                'What controls what comes into and out of the cell?': 'cell membrane',
+                'What is the fluid inside a cell surroudning the nucleus?': 'cytoplasm',
+                'What is a rigid layer outside of the plasma membrane?': 'cell wall',
+                'What is a watery fluid that maintains the life of a cell?': 'central vacuole',
+                'What produces proteins with ribonucleic acid?': 'ribosome',
+                'What contains digestive enzymes?': 'lysosome',
+                'What makes energy for a cell?': 'chloroplast',
+                'What is in animals only and is used for support?': 'cytoskeleton',
+                'What helps in cell division in animals?': 'centrioles'
+            }
+```
