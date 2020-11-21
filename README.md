@@ -869,3 +869,17 @@ poc_teq_m = {
                 ]
             }
 ```
+
+## STEP 26: Repeat Steps 9-12
+
+## STEP 27: Communicate With The micro:bit poc TED Bot & Take The Fill In The Blank Quiz, Multiple-Choice Quiz
+```
+>>> import main
+>>> main.bot(poc_ted, 'What is a nucleus?')
+BOT: The nucleus controls the cell's operations.
+>>> main.bot(poc_ted, 'What is a lysosome?')
+BOT: A lysosome contains digestive enzymes.
+>>> main.bot(poc_ted, 'What is a ribosome?')
+BOT: A ribosome produces proteins with ribonucleic acid.
+>>> 
+```
