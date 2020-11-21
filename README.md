@@ -76,18 +76,20 @@ generic_teq_f = {
 
 # Generic talking educational multiple choice quiz database
 generic_teq_m = {
-                    'What is our bot\'s name?': [
-                                                    'Mr. George', 
-                                                    'Ms. Henry', 
-                                                    'Mr. Atencio', 
-                                                    0
-                                                ],
-                    'What is Mr. George\'s favorite food?': [
-                                                                'chocolate', 
-                                                                'nachos', 
-                                                                'pizza', 
-                                                                2
-                                                            ]
+                    'What is our bot\'s name?':
+                    [
+                        'Mr. George', 
+                        'Ms. Henry', 
+                        'Mr. Atencio', 
+                        0
+                    ],
+                    'What is Mr. George\'s favorite food?':
+                    [
+                        'chocolate', 
+                        'nachos', 
+                        'pizza', 
+                        2
+                    ]
                 }
 
 
@@ -507,12 +509,20 @@ Go into the Python Web Editor and select line 138.  Press enter to create a new 
 ...
 # State capital talking educational fill in the blank quiz database
 sc_teq_f = {
-                    'What is the capital of Pennsylvania?': 'Harrisburg',
-                    'Harrisburg is the capital of what state?': 'Pennsylvania',
-                    'What is the capital of Texas?': 'Austin',
-                    'What is the capital of Arkansas?': 'Little Rock',
-                    'What is the capital of California?': 'Sacramento',
-                    'Olympia is the capital of what state?': 'Wyoming',
+                'What is the capital of Pennsylvania?': 'Harrisburg',
+                'Harrisburg is the capital of what state?': 'Pennsylvania',
+                'What is the capital of Texas?': 'Austin',
+                'What is the capital of Arkansas?': 'Little Rock',
+                'What is the capital of California?': 'Sacramento',
+                'Olympia is the capital of what state?': 'Washington',
+                'What is the capital of Utah?': 'Salt Lake City',
+                'What is the capital of Kansas?': 'Topeka',
+                'What is the capital of Maine?': 'Augusta',
+                'What is the capital of Virginia?': 'Richmond'
            }
 ...
 ```
+
+## STEP 17: Populate Our State Capital Multiple Choice Quiz
+Go into the Python Web Editor and select line 152.  Press enter to create a new blank line and paste the following on the new blank line 153.
+```python
