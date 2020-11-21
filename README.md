@@ -504,7 +504,7 @@ sc_ted = {
 ```
 
 ## STEP 16: Populate Our State Capital Fill In The Blank Quiz
-Go into the Python Web Editor and select line 138.  Press enter to create a new blank line and paste the following on the new blank line 139.
+Go into the Python Web Editor and select line 140.  Press enter to create a new blank line and paste the following on the new blank line 141.
 ```python
 ...
 # State capital talking educational fill in the blank quiz database
@@ -524,5 +524,81 @@ sc_teq_f = {
 ```
 
 ## STEP 17: Populate Our State Capital Multiple Choice Quiz
-Go into the Python Web Editor and select line 152.  Press enter to create a new blank line and paste the following on the new blank line 153.
+Go into the Python Web Editor and select line 154.  Press enter to create a new blank line and paste the following on the new blank line 155.
 ```python
+...
+# State capital talking educational multiple choice quiz database
+sc_teq_m = {
+                'What is the capital of Pennsylvania?': 
+                [
+                    'Philadelphia', 
+                    'Pittsburgh', 
+                    'Harrisburg', 
+                    2
+                ],
+                'Harrisburg is the capital of what state?':
+                [
+                    'West Virginia', 
+                    'Pennsylvania', 
+                    'New Jersey', 
+                    1
+                ],
+                'What is the capital of Texas?':
+                [
+                    'Houston',
+                    'El Paso',
+                    'Austin',
+                    2
+                ],
+                'What is the capital of Arkansas?':
+                [
+                    'Little Rock',
+                    'Mobile',
+                    'Hope',
+                    0
+                ],
+                'What is the capital of California?':
+                [
+                    'Los Angeles',
+                    'San Francisco',
+                    'Sacramento',
+                    2
+                ],
+                'Olympia is the capital of what state?':
+                [
+                    'Oregon',
+                    'Washington',
+                    'Idaho',
+                    1
+                ],
+                'What is the capital of Utah?':
+                [
+                    'Salt Lake City',
+                    'Provo',
+                    'Salem',
+                    0
+                ],
+                'What is the capital of Kansas?':
+                [
+                    'Topeka',
+                    'Omaha',
+                    'Kansas City',
+                    0
+                ],
+                'What is the capital of Maine?':
+                [
+                    'Portland',
+                    'Augusta',
+                    'Lewiston',
+                    1
+                ],
+                'What is the capital of Virginia?':
+                [
+                    'Chantilly',
+                    'Richmond',
+                    'Arlington',
+                    1
+                ]
+           }
+...
+```
