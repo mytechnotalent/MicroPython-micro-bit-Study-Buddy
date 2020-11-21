@@ -596,3 +596,24 @@ sc_teq_m = {
                 ]
            }
 ```
+
+## STEP 18: Populate Our Parts Of A Cell Database
+Go into the Python Web Editor and select line 116.  Press enter to create a new blank line and paste the following on the new blank line 117.
+```python
+# Parts of a cell educational database
+poc_ted = {
+            'nucleus': 'The nucleus controls the cell\'s operations.',
+            'cell membrane': 'The cell membrane controls what comes into and out of the cell.',
+            'cytoplasm': 'Cytoplasm is the fluid inside a cell surroudning the nucleus.',
+            'cell wall': 'A cell wall is a rigid layer outside of the plasma membrane.',
+            'central vacuole': 'A central vacuole is a watery fluid that maintains the life of a cell.',
+            'endoplasmic reticulum': 'Endoplasmic reticulum is the transportation system of a cell.',
+            'ribosome': 'A ribosome produces proteins with ribonucleic acid.',
+            'golgi body': 'A golgi body packages proteins into vesicles.',
+            'lysosome': 'A lysosome contains digestive enzymes.',
+            'chloroplast': 'A chloroplast makes energy for a cell.',
+            'mitochondria': 'Mitochondria provides energy that cells need to divide, move and contract.',
+            'cytoskeleton': 'A cytoskeleton is in animals only and is used for support.',
+            'centrioles': 'Centrioles helps in cell division in animals.'
+          }
+```
