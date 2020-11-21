@@ -795,6 +795,77 @@ poc_teq_f = {
 ## STEP 25: Populate Our Parts Of A Cell Multiple Choice Quiz
 Go into the Python Web Editor and delete our `sc_teq_m` database and replace it with the following database.
 ```python
-
-
+# Parts of a cell talking educational multiple choice quiz database
+poc_teq_m = {
+                'What controls the cell\'s operations?':
+                [
+                    'nucleus',
+                    'ribosome',
+                    'lysosome',
+                    0
+                ],
+                'What controls what comes into and out of the cell?':
+                [
+                    'cytoplasm',
+                    'cell membrane',
+                    'cytoskeleton',
+                    1
+                ],
+                'What is the fluid inside a cell surroudning the nucleus?':
+                [
+                    'central vacuole',
+                    'centrioles',
+                    'cytoplasm',
+                    2
+                ],
+                'What is a rigid layer outside of the plasma membrane?':
+                [
+                    'cell wall',
+                    'cytoskeleton',
+                    'cell membrane',
+                    0
+                ],
+                'What is a watery fluid that maintains the life of a cell?':
+                [
+                    'chloroplast',
+                    'central vacuole',
+                    'chloroplast',
+                    1
+                ],
+                'What produces proteins with ribonucleic acid?':
+                [
+                    'lysosome',
+                    'centrioles',
+                    'ribosome',
+                    2
+                ],
+                'What contains digestive enzymes?':
+                [
+                    'lysosome',
+                    'nucleus',
+                    'chloroplast',
+                    0
+                ],
+                'What makes energy for a cell?':
+                [
+                    'ribosome',
+                    'chloroplast',
+                    'cytoplasm',
+                    1
+                ],
+                'What is in animals only and is used for support?':
+                [
+                    'cytoskeleton',
+                    'cell wall',
+                    'cell membrane',
+                    0
+                ],
+                'What helps in cell division in animals?': 
+                [
+                    'central vacuole',
+                    'chloroplast',
+                    'centrioles',
+                    2
+                ]
+            }
 ```
