@@ -350,7 +350,7 @@ def quiz_m(teq):
 ## STEP 12: Click Open Serial
 ![image](https://github.com/mytechnotalent/MicroPython-micro-bit_Study_Buddy/blob/main/STEP%2012.png?raw=true)
 
-## STEP 13: Communicate With The micro:bit Generic TED Bot & Take The Fill In The Blank Quiz, Multiple-Choice Quiz
+## STEP 13: Communicate With The micro:bit generic TED Bot & Take The Fill In The Blank Quiz, Multiple-Choice Quiz
 ```
 >>> import main
 >>> main.bot(generic_ted, 'What is your name?')
@@ -391,11 +391,11 @@ I would LOVE for you to try again!
 >>> 
 ```
 
-## STEP 14: Rename Script Name To sb_classroom
+## STEP 14: Rename Script Name To sb_sc
 ![image](https://github.com/mytechnotalent/MicroPython-micro-bit_Study_Buddy/blob/main/STEP%2014.png?raw=true)
 
 ## STEP 15: Populate Our State Capital Database
-Go into the Python Web Editor and select line 13.  Press enter to create a new blank line and paste the following on the new blank line 14.
+Go into the Python Web Editor and delete our `generic_ted` database and replace it with the following database.
 ```python
 # State capital talking educational database
 sc_ted = {
@@ -502,7 +502,7 @@ sc_ted = {
 ```
 
 ## STEP 16: Populate Our State Capital Fill In The Blank Quiz
-Go into the Python Web Editor and select line 140.  Press enter to create a new blank line and paste the following on the new blank line 141.
+Go into the Python Web Editor and delete our `generic_teq_f` database and replace it with the following database.
 ```python
 # State capital talking educational fill in the blank quiz database
 sc_teq_f = {
@@ -520,7 +520,7 @@ sc_teq_f = {
 ```
 
 ## STEP 17: Populate Our State Capital Multiple Choice Quiz
-Go into the Python Web Editor and select line 154.  Press enter to create a new blank line and paste the following on the new blank line 155.
+Go into the Python Web Editor and delete our `generic_teq_m` database and replace it with the following database.
 ```python
 # State capital talking educational multiple choice quiz database
 sc_teq_m = {
@@ -595,6 +595,120 @@ sc_teq_m = {
                     1
                 ]
            }
+```
+
+## STEP 18: Repeat Steps 9-12
+
+## STEP 19: Communicate With The micro:bit sc TED Bot & Take The Fill In The Blank Quiz, Multiple-Choice Quiz
+```
+>>> import main
+>>> main.bot(sc_ted, 'What is the capital of Pennsylvania?')
+BOT: The capital of Pennsylvania is Harrisburg.
+>>> main.bot(sc_ted, 'What is the capital of Texas?')
+BOT: The capital of Texas is Austin.
+>>> main.bot(sc_ted, 'Topeka is the capital of what state?')
+BOT: Topeka is the capital of Kansas.
+>>>
+>>> main.quiz_f(sc_teq_f)
+Harrisburg is the capital of what state?
+ANSWER: Pennsylvania
+CORRECT!
+What is the capital of Utah?
+ANSWER: Provo
+The correct answer is Salt Lake City.
+What is the capital of Maine?
+ANSWER: Augusta
+CORRECT!
+What is the capital of Virginia?
+ANSWER: Richmond
+CORRECT!
+What is the capital of Pennsylvania?
+ANSWER: Harrisburg
+CORRECT!
+What is the capital of Arkansas?
+ANSWER: Hope
+The correct answer is Little Rock.
+What is the capital of California?
+ANSWER: Sacramento
+CORRECT!
+What is the capital of Texas?
+ANSWER: Houston
+The correct answer is Austin.
+Olympia is the capital of what state?
+ANSWER: Wyoming
+The correct answer is Washington.
+What is the capital of Kansas?
+ANSWER: Topeka
+CORRECT!
+You got 6 out of 10 correct!
+You are doing a great job!
+I would LOVE for you to try again!
+>>>
+>>> main.quiz_m(sc_teq_m)
+Harrisburg is the capital of what state?
+Press A for West Virginia.
+Touch the logo for Pennsylvania.
+Press B for New Jersey.
+You selected Pennsylvania.
+CORRECT!
+What is the capital of Utah?
+Press A for Salt Lake City.
+Touch the logo for Provo.
+Press B for Salem.
+You selected Provo.
+The correct answer is Salt Lake City.
+What is the capital of Maine?
+Press A for Portland.
+Touch the logo for Augusta.
+Press B for Lewiston.
+You selected Portland.
+The correct answer is Augusta.
+What is the capital of Virginia?
+Press A for Chantilly.
+Touch the logo for Richmond.
+Press B for Arlington.
+You selected Richmond.
+CORRECT!
+What is the capital of Pennsylvania?
+Press A for Philadelphia.
+Touch the logo for Pittsburgh.
+Press B for Harrisburg.
+You selected Harrisburg.
+CORRECT!
+What is the capital of Arkansas?
+Press A for Little Rock.
+Touch the logo for Mobile.
+Press B for Hope.
+You selected Little Rock.
+CORRECT!
+What is the capital of California?
+Press A for Los Angeles.
+Touch the logo for San Francisco.
+Press B for Sacramento.
+You selected Sacramento.
+CORRECT!
+What is the capital of Texas?
+Press A for Houston.
+Touch the logo for El Paso.
+Press B for Austin.
+You selected Houston.
+The correct answer is Austin.
+Olympia is the capital of what state?
+Press A for Oregon.
+Touch the logo for Washington.
+Press B for Idaho.
+You selected Washington.
+CORRECT!
+What is the capital of Kansas?
+Press A for Topeka.
+Touch the logo for Omaha.
+Press B for Kansas City.
+You selected Topeka.
+CORRECT!
+You got 7 out of 10 correct!
+You are doing a great job!
+I would LOVE for you to try again!
+>>>
 ```
 
 ## STEP 18: Populate Our Parts Of A Cell Database
