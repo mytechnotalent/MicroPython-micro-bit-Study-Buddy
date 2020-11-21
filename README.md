@@ -711,7 +711,7 @@ I would LOVE for you to try again!
 >>>
 ```
 
-## STEP 18: Populate Our Parts Of A Cell Database
+## STEP 20: Populate Our Parts Of A Cell Database
 Go into the Python Web Editor and select line 116.  Press enter to create a new blank line and paste the following on the new blank line 117.
 ```python
 # Parts of a cell educational database
@@ -732,7 +732,7 @@ poc_ted = {
           }
 ```
 
-## STEP 19: Populate Our Parts Of A Cell Fill In The Blank Quiz
+## STEP 21: Populate Our Parts Of A Cell Fill In The Blank Quiz
 Go into the Python Web Editor and select line 245.  Press enter to create a new blank line and paste the following on the new blank line 246.
 ```python
 # Parts of a cell talking educational fill in the blank quiz database
@@ -748,4 +748,53 @@ poc_teq_f = {
                 'What is in animals only and is used for support?': 'cytoskeleton',
                 'What helps in cell division in animals?': 'centrioles'
             }
+```
+
+## STEP 22: Rename Script Name To sb_poc
+![image](https://github.com/mytechnotalent/MicroPython-micro-bit_Study_Buddy/blob/main/STEP%2022.png?raw=true)
+
+## STEP 23: Populate Our Parts Of A Cell Database
+Go into the Python Web Editor and delete our `sc_ted` database and replace it with the following database.
+```python
+# Parts of a cell educational database
+poc_ted = {
+            'nucleus': 'The nucleus controls the cell\'s operations.',
+            'cell membrane': 'The cell membrane controls what comes into and out of the cell.',
+            'cytoplasm': 'Cytoplasm is the fluid inside a cell surroudning the nucleus.',
+            'cell wall': 'A cell wall is a rigid layer outside of the plasma membrane.',
+            'central vacuole': 'A central vacuole is a watery fluid that maintains the life of a cell.',
+            'endoplasmic reticulum': 'Endoplasmic reticulum is the transportation system of a cell.',
+            'ribosome': 'A ribosome produces proteins with ribonucleic acid.',
+            'golgi body': 'A golgi body packages proteins into vesicles.',
+            'lysosome': 'A lysosome contains digestive enzymes.',
+            'chloroplast': 'A chloroplast makes energy for a cell.',
+            'mitochondria': 'Mitochondria provides energy that cells need to divide, move and contract.',
+            'cytoskeleton': 'A cytoskeleton is in animals only and is used for support.',
+            'centrioles': 'Centrioles helps in cell division in animals.'
+          }
+```
+
+## STEP 24: Populate Our Parts Of A Cell Fill In The Blank Quiz
+Go into the Python Web Editor and delete our `sc_teq_f` database and replace it with the following database.
+```python
+# Parts of a cell talking educational fill in the blank quiz database
+poc_teq_f = {
+                'What controls the cell\'s operations?': 'nucleus',
+                'What controls what comes into and out of the cell?': 'cell membrane',
+                'What is the fluid inside a cell surroudning the nucleus?': 'cytoplasm',
+                'What is a rigid layer outside of the plasma membrane?': 'cell wall',
+                'What is a watery fluid that maintains the life of a cell?': 'central vacuole',
+                'What produces proteins with ribonucleic acid?': 'ribosome',
+                'What contains digestive enzymes?': 'lysosome',
+                'What makes energy for a cell?': 'chloroplast',
+                'What is in animals only and is used for support?': 'cytoskeleton',
+                'What helps in cell division in animals?': 'centrioles'
+            }
+```
+
+## STEP 25: Populate Our Parts Of A Cell Multiple Choice Quiz
+Go into the Python Web Editor and delete our `sc_teq_m` database and replace it with the following database.
+```python
+
+
 ```
