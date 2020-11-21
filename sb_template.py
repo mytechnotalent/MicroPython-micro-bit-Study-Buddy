@@ -19,18 +19,20 @@ generic_teq_f = {
 
 # Generic talking educational multiple choice quiz database
 generic_teq_m = {
-                    'What is our bot\'s name?': [
-                                                    'Mr. George', 
-                                                    'Ms. Henry', 
-                                                    'Mr. Atencio', 
-                                                    0
-                                                ],
-                    'What is Mr. George\'s favorite food?': [
-                                                                'chocolate', 
-                                                                'nachos', 
-                                                                'pizza', 
-                                                                2
-                                                            ]
+                    'What is our bot\'s name?':
+                    [
+                        'Mr. George', 
+                        'Ms. Henry', 
+                        'Mr. Atencio', 
+                        0
+                    ],
+                    'What is Mr. George\'s favorite food?':
+                    [
+                        'chocolate', 
+                        'nachos', 
+                        'pizza', 
+                        2
+                    ]
                 }
 
 
