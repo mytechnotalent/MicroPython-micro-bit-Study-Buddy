@@ -297,6 +297,7 @@ def quiz_m(teq):
             say('The correct answer is')
             say(str(teq[key][correct_answer]))
             display.show(Image.HAPPY)
+        time.sleep(1)
         gc.collect()
     
     # Here we reply to the student their score
