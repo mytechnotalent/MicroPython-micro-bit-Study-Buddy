@@ -349,14 +349,14 @@ def quiz_m(teq):
 ## STEP 13: Communicate With The micro:bit Generic TED Bot & Take Fill In The Blank Quiz, Multiple-Choice Quiz
 ```
 >>> import main
->>> main.generic_bot('What is your name?')
+>>> main.bot(generic_ted, 'What is your name?')
 BOT: My name is Mr. George.
->>> main.generic_bot('What is your favorite food?')
+>>> main.bot(generic_ted, 'What is your favorite food?')
 BOT: I like pizza.
->>> main.generic_bot('What is your favorite song?')
+>>> main.bot(generic_ted, 'What is your favorite song?')
 BOT: That is not something I am familiar with.
 >>>
->>> main.generic_quiz_f()
+>>> main.quiz_f(generic_teq_f)
 What is our bot's name?
 ANSWER: Mr. George
 CORRECT!
@@ -368,7 +368,7 @@ You got a perfect score!
 Well done!
 I am so proud of you!
 >>>
->>> main.generic_quiz_m()
+>>> main.quiz_m(generic_teq_m)
 What is our bot's name?
 Press A for Mr. George.
 Touch the logo for Ms. Henry.
