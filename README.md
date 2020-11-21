@@ -917,5 +917,69 @@ You got 8 out of 10 correct!
 You are doing a great job!
 I would LOVE for you to try again!
 >>>
-
+>>> main.quiz_m(poc_teq_m)
+What helps in cell division in animals?
+Press A for central vacuole.
+Touch the logo for chloroplast.
+Press B for centrioles.
+You selected centrioles.
+CORRECT!
+What is a rigid layer outside of the plasma membrane?
+Press A for cell wall.
+Touch the logo for cytoskeleton.
+Press B for cell membrane.
+You selected cell wall.
+CORRECT!
+What controls what comes into and out of the cell?
+Press A for cytoplasm.
+Touch the logo for cell membrane.
+Press B for cytoskeleton.
+You selected cytoplasm.
+The correct answer is cell membrane.
+What makes energy for a cell?
+Press A for ribosome.
+Touch the logo for chloroplast.
+Press B for cytoplasm.
+You selected chloroplast.
+CORRECT!
+What contains digestive enzymes?
+Press A for lysosome.
+Touch the logo for nucleus.
+Press B for chloroplast.
+You selected lysosome.
+CORRECT!
+What is in animals only and is used for support?
+Press A for cytoskeleton.
+Touch the logo for cell wall.
+Press B for cell membrane.
+You selected cytoskeleton.
+CORRECT!
+What is the fluid inside a cell surroudning the nucleus?
+Press A for central vacuole.
+Touch the logo for centrioles.
+Press B for cytoplasm.
+You selected cytoplasm.
+CORRECT!
+What controls the cell's operations?
+Press A for nucleus.
+Touch the logo for ribosome.
+Press B for lysosome.
+You selected nucleus.
+CORRECT!
+What is a watery fluid that maintains the life of a cell?
+Press A for chloroplast.
+Touch the logo for central vacuole.
+Press B for chloroplast.
+You selected central vacuole.
+CORRECT!
+What produces proteins with ribonucleic acid?
+Press A for lysosome.
+Touch the logo for centrioles.
+Press B for ribosome.
+You selected ribosome.
+CORRECT!
+You got 9 out of 10 correct!
+You are doing a great job!
+I would LOVE for you to try again!
+>>> 
 ```
