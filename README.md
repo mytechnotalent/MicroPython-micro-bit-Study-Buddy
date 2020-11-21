@@ -397,7 +397,6 @@ I would LOVE for you to try again!
 ## STEP 15: Populate Our State Capital Database
 Go into the Python Web Editor and select line 13.  Press enter to create a new blank line and paste the following on the new blank line 14.
 ```python
-...
 # State capital talking educational database
 sc_ted = {
             'alabama': 'The capital of Alabama is Montgomery.',
@@ -500,13 +499,11 @@ sc_ted = {
             'wyoming': 'The capital of Wyoming is Cheyenne.',
             'cheyenne': 'Cheyenne is the capital of Wyoming.',
          }
-...
 ```
 
 ## STEP 16: Populate Our State Capital Fill In The Blank Quiz
 Go into the Python Web Editor and select line 140.  Press enter to create a new blank line and paste the following on the new blank line 141.
 ```python
-...
 # State capital talking educational fill in the blank quiz database
 sc_teq_f = {
                 'What is the capital of Pennsylvania?': 'Harrisburg',
@@ -520,13 +517,11 @@ sc_teq_f = {
                 'What is the capital of Maine?': 'Augusta',
                 'What is the capital of Virginia?': 'Richmond'
            }
-...
 ```
 
 ## STEP 17: Populate Our State Capital Multiple Choice Quiz
 Go into the Python Web Editor and select line 154.  Press enter to create a new blank line and paste the following on the new blank line 155.
 ```python
-...
 # State capital talking educational multiple choice quiz database
 sc_teq_m = {
                 'What is the capital of Pennsylvania?': 
@@ -600,5 +595,4 @@ sc_teq_m = {
                     1
                 ]
            }
-...
 ```
