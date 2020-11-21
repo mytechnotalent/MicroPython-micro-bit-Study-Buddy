@@ -882,4 +882,40 @@ BOT: A lysosome contains digestive enzymes.
 >>> main.bot(poc_ted, 'What is a ribosome?')
 BOT: A ribosome produces proteins with ribonucleic acid.
 >>> 
+>>> main.quiz_f(poc_teq_f)
+What helps in cell division in animals?
+ANSWER: centrioles
+CORRECT!
+What is a rigid layer outside of the plasma membrane?
+ANSWER: lysosome
+The correct answer is cell wall.
+What controls what comes into and out of the cell?
+ANSWER: cell membrane
+CORRECT!
+What makes energy for a cell?
+ANSWER: chloroplast
+CORRECT!
+What contains digestive enzymes?
+ANSWER: lysosome
+CORRECT!
+What is in animals only and is used for support?
+ANSWER: centrioles
+The correct answer is cytoskeleton.
+What is the fluid inside a cell surroudning the nucleus?
+ANSWER: cytoplasm
+CORRECT!
+What controls the cell's operations?
+ANSWER: nucleus
+CORRECT!
+What is a watery fluid that maintains the life of a cell?
+ANSWER: central vacuole
+CORRECT!
+What produces proteins with ribonucleic acid?
+ANSWER: ribosome
+CORRECT!
+You got 8 out of 10 correct!
+You are doing a great job!
+I would LOVE for you to try again!
+>>>
+
 ```
