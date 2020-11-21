@@ -388,7 +388,10 @@ I would LOVE for you to try again!
 >>> 
 ```
 
-## STEP 14: Populate Our State Capital Database
+## STEP 14: Rename Script Name To sb_classroom
+![image](https://github.com/mytechnotalent/MicroPython-micro-bit_Study_Buddy/blob/main/STEP%2014.png?raw=true)
+
+## STEP 15: Populate Our State Capital Database
 Go into the Python Web Editor and select line 13.  Press enter to create a new blank line and paste the following on the new blank line 14.
 ```python
 ...
@@ -494,5 +497,21 @@ sc_ted = {
             'wyoming': 'The capital of Wyoming is Cheyenne.',
             'cheyenne': 'Cheyenne is the capital of Wyoming.',
          }
+...
+```
+
+## STEP 16: Populate Our State Capital Fill In The Blank Quiz
+Go into the Python Web Editor and select line 138.  Press enter to create a new blank line and paste the following on the new blank line 139.
+```python
+...
+# State capital talking educational fill in the blank quiz database
+sc_teq_f = {
+                    'What is the capital of Pennsylvania?': 'Harrisburg',
+                    'Harrisburg is the capital of what state?': 'Pennsylvania',
+                    'What is the capital of Texas?': 'Austin',
+                    'What is the capital of Arkansas?': 'Little Rock',
+                    'What is the capital of California?': 'Sacramento',
+                    'Olympia is the capital of what state?': 'Wyoming',
+           }
 ...
 ```
