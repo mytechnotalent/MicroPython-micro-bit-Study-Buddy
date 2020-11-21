@@ -347,7 +347,7 @@ def quiz_m(teq):
 ## STEP 12: Click Open Serial
 ![image](https://github.com/mytechnotalent/MicroPython-micro-bit_Study_Buddy/blob/main/STEP%2012.png?raw=true)
 
-## STEP 13: Communicate With The micro:bit Generic TED Bot & Take Fill In The Blank Quiz, Multiple-Choice Quiz
+## STEP 13: Communicate With The micro:bit Generic TED Bot & Take The Fill In The Blank Quiz, Multiple-Choice Quiz
 ```
 >>> import main
 >>> main.bot(generic_ted, 'What is your name?')
@@ -387,3 +387,5 @@ You are doing a great job!
 I would LOVE for you to try again!
 >>> 
 ```
+
+## STEP 14: Populate Our 
