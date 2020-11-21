@@ -62,12 +62,42 @@ from microbit import display, Image, pin_logo, button_a, button_b
 from music import play, POWER_UP
 from speech import say
 
+# Generic talking educational database
+generic_ted = {
+                'your name': 'My name is Mr. George.',
+                'food': 'I like pizza.',
+              }
 
-def generic_bot(question):
+# Generic talking educational fill in the blank quiz database
+generic_teq_f = {
+                    'What is our bot\'s name?': 'Mr. George',
+                    'What is Mr. George\'s favorite food?': 'pizza',
+                }
+
+# Generic talking educational multiple choice quiz database
+generic_teq_m = {
+                    'What is our bot\'s name?': [
+                                                    'Mr. George', 
+                                                    'Ms. Henry', 
+                                                    'Mr. Atencio', 
+                                                    0
+                                                ],
+                    'What is Mr. George\'s favorite food?': [
+                                                                'chocolate', 
+                                                                'nachos', 
+                                                                'pizza', 
+                                                                2
+                                                            ]
+                }
+
+
+def bot(ted, question):
     """Bot function
 
     Parameters
     ----------
+    ted : dict
+        Talking educational database to utilize
     question : str
         Question to parse for trigger words
 
@@ -75,15 +105,6 @@ def generic_bot(question):
     -------
     None
     """
-    # Our Python dictionary which is a database
-    # and here is where we can type in new key/value
-    # pairs or in our case trigger word or words and
-    # then a response
-    db = {
-            'your name': 'My name is Mr. George.',
-            'food': 'I like pizza.',
-         }
-
     # Init LED happy image 
     display.show(Image.HAPPY)
 
@@ -109,7 +130,7 @@ def generic_bot(question):
         # and seeing if our input value has the word or words which
         # match an entry in the dictionary database and if it does
         # put the value in the _response object
-        response = [val for key, val in db.items() if key in question]
+        response = [val for key, val in ted.items() if key in question]
         
         gc.collect()
         
@@ -133,26 +154,18 @@ def generic_bot(question):
     gc.collect()
         
         
-def generic_quiz_f():
+def quiz_f(teq):
     """Fill in the blank quiz function
 
     Parameters
     ----------
-    None
+    teq : dict
+        Talking educational quiz to utilize
 
     Returns
     -------
     None
     """
-    # Our Python dictionary which is a database
-    # and here is where we can type in new key/value
-    # pairs or in our case trigger word or words and
-    # then a response
-    db = {
-            'What is our bot\'s name?': 'Mr. George',
-            'What is Mr. George\'s favorite food?': 'pizza',
-         }
-
     # Init LED happy image 
     display.show(Image.HAPPY)
 
@@ -165,12 +178,12 @@ def generic_quiz_f():
     score = 0
     
     # Here we iterate through our quiz database
-    for key in db:
+    for key in teq:
         print(key)
         say(str(key))
         response = input('ANSWER: ')
         response = response.lower()
-        correct_answer = db[key].lower()
+        correct_answer = teq[key].lower()
         if response == correct_answer:
             display.show(Image.SURPRISED)
             print('CORRECT!')
@@ -179,24 +192,24 @@ def generic_quiz_f():
             score += 1
         else:
             display.show(Image.SURPRISED)
-            print('The correct answer is {0}.'.format(db[key]))
+            print('The correct answer is {0}.'.format(teq[key]))
             say('The correct answer is')
-            say(str(db[key]))
+            say(str(teq[key]))
             display.show(Image.HAPPY)
         gc.collect()
     
     # Here we reply to the student their score
     display.show(Image.SURPRISED)
-    print('You got {0} out of {1} correct!'.format(score, len(db)))
+    print('You got {0} out of {1} correct!'.format(score, len(teq)))
     say('You got')
     say(str(score))
     say('out of')
-    say(str(len(db)))
+    say(str(len(teq)))
     say('correct!')
     
     # If student got a perfect score respond appropriately
     # or provide an encouring message to retry the quiz
-    if score == len(db):
+    if score == len(teq):
         print('You got a perfect score!')
         say('You got a perfect score!')
         print('Well done!')
@@ -216,36 +229,18 @@ def generic_quiz_f():
     gc.collect()
     
     
-def generic_quiz_m():
+def quiz_m(teq):
     """Multiple choice quiz function
 
     Parameters
     ----------
-    None
+    teq : dict
+        Talking educational quiz to utilize
 
     Returns
     -------
     None
     """
-    # Our Python dictionary which is a database
-    # and here is where we can type in new key/value
-    # pairs or in our case trigger word or words and
-    # then a response
-    db = {
-            'What is our bot\'s name?': [
-                                            'Mr. George', 
-                                            'Ms. Henry', 
-                                            'Mr. Atencio', 
-                                            0
-                                        ],
-            'What is Mr. George\'s favorite food?': [
-                                                        'chocolate', 
-                                                        'nachos', 
-                                                        'pizza', 
-                                                        2
-                                                    ]
-         }
-
     # Init LED happy image 
     display.show(Image.HAPPY)
 
@@ -259,19 +254,19 @@ def generic_quiz_m():
     
     # Here we iterate through our quiz database with multiple
     # choice items
-    for key in db:
+    for key in teq:
         display.show(Image.SURPRISED)
         print(key)
         say(str(key))
-        print('Press A for {0}.'.format(db[key][0]))
+        print('Press A for {0}.'.format(teq[key][0]))
         say('Press A for')
-        say(str(db[key][0]))
-        print('Touch the logo for {0}.'.format(db[key][1]))
+        say(str(teq[key][0]))
+        print('Touch the logo for {0}.'.format(teq[key][1]))
         say('Touch the logo for')
-        say(str(db[key][1]))
-        print('Press B for {0}.'.format(db[key][2]))
+        say(str(teq[key][1]))
+        print('Press B for {0}.'.format(teq[key][2]))
         say('Press B for')
-        say(str(db[key][2]))
+        say(str(teq[key][2]))
         display.show(Image.HAPPY)
         #response = ''
         while True:
@@ -286,10 +281,10 @@ def generic_quiz_m():
                 break
             else:
                 pass
-        correct_answer = db[key][3]
-        print('You selected {0}.'.format(db[key][response]))
+        correct_answer = teq[key][3]
+        print('You selected {0}.'.format(teq[key][response]))
         say('You selected')
-        say(str(db[key][response]))
+        say(str(teq[key][response]))
         if response == correct_answer:
             display.show(Image.SURPRISED)
             print('CORRECT!')
@@ -298,24 +293,24 @@ def generic_quiz_m():
             score += 1
         else:
             display.show(Image.SURPRISED)
-            print('The correct answer is {0}.'.format(db[key][correct_answer]))
+            print('The correct answer is {0}.'.format(teq[key][correct_answer]))
             say('The correct answer is')
-            say(str(db[key][correct_answer]))
+            say(str(teq[key][correct_answer]))
             display.show(Image.HAPPY)
         gc.collect()
     
     # Here we reply to the student their score
     display.show(Image.SURPRISED)
-    print('You got {0} out of {1} correct!'.format(score, len(db)))
+    print('You got {0} out of {1} correct!'.format(score, len(teq)))
     say('You got')
     say(str(score))
     say('out of')
-    say(str(len(db)))
+    say(str(len(teq)))
     say('correct!')
     
     # If student got a perfect score respond appropriately
     # or provide an encouring message to retry the quiz
-    if score == len(db):
+    if score == len(teq):
         print('You got a perfect score!')
         say('You got a perfect score!')
         print('Well done!')
