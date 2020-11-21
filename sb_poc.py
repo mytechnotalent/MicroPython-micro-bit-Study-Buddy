@@ -302,9 +302,11 @@ def quiz_m(teq):
             else:
                 pass
         correct_answer = teq[key][3]
+        display.show(Image.SURPRISED)
         print('You selected {0}.'.format(teq[key][response]))
         say('You selected')
         say(str(teq[key][response]))
+        display.show(Image.HAPPY)
         if response == correct_answer:
             display.show(Image.SURPRISED)
             print('CORRECT!')
