@@ -718,7 +718,7 @@ Go into the Python Web Editor and select line 116.  Press enter to create a new 
 poc_ted = {
             'nucleus': 'The nucleus controls the cell\'s operations.',
             'cell membrane': 'The cell membrane controls what comes into and out of the cell.',
-            'cytoplasm': 'Cytoplasm is the fluid inside a cell surroudning the nucleus.',
+            'cytoplasm': 'Cytoplasm is the fluid inside a cell surrounding the nucleus.',
             'cell wall': 'A cell wall is a rigid layer outside of the plasma membrane.',
             'central vacuole': 'A central vacuole is a watery fluid that maintains the life of a cell.',
             'endoplasmic reticulum': 'Endoplasmic reticulum is the transportation system of a cell.',
@@ -739,7 +739,7 @@ Go into the Python Web Editor and select line 245.  Press enter to create a new 
 poc_teq_f = {
                 'What controls the cell\'s operations?': 'nucleus',
                 'What controls what comes into and out of the cell?': 'cell membrane',
-                'What is the fluid inside a cell surroudning the nucleus?': 'cytoplasm',
+                'What is the fluid inside a cell surrounding the nucleus?': 'cytoplasm',
                 'What is a rigid layer outside of the plasma membrane?': 'cell wall',
                 'What is a watery fluid that maintains the life of a cell?': 'central vacuole',
                 'What produces proteins with ribonucleic acid?': 'ribosome',
@@ -760,7 +760,7 @@ Go into the Python Web Editor and delete our `sc_ted` database and replace it wi
 poc_ted = {
             'nucleus': 'The nucleus controls the cell\'s operations.',
             'cell membrane': 'The cell membrane controls what comes into and out of the cell.',
-            'cytoplasm': 'Cytoplasm is the fluid inside a cell surroudning the nucleus.',
+            'cytoplasm': 'Cytoplasm is the fluid inside a cell surrounding the nucleus.',
             'cell wall': 'A cell wall is a rigid layer outside of the plasma membrane.',
             'central vacuole': 'A central vacuole is a watery fluid that maintains the life of a cell.',
             'endoplasmic reticulum': 'Endoplasmic reticulum is the transportation system of a cell.',
@@ -781,7 +781,7 @@ Go into the Python Web Editor and delete our `sc_teq_f` database and replace it 
 poc_teq_f = {
                 'What controls the cell\'s operations?': 'nucleus',
                 'What controls what comes into and out of the cell?': 'cell membrane',
-                'What is the fluid inside a cell surroudning the nucleus?': 'cytoplasm',
+                'What is the fluid inside a cell surrounding the nucleus?': 'cytoplasm',
                 'What is a rigid layer outside of the plasma membrane?': 'cell wall',
                 'What is a watery fluid that maintains the life of a cell?': 'central vacuole',
                 'What produces proteins with ribonucleic acid?': 'ribosome',
@@ -811,7 +811,7 @@ poc_teq_m = {
                     'cytoskeleton',
                     1
                 ],
-                'What is the fluid inside a cell surroudning the nucleus?':
+                'What is the fluid inside a cell surrounding the nucleus?':
                 [
                     'central vacuole',
                     'centrioles',
@@ -901,7 +901,7 @@ CORRECT!
 What is in animals only and is used for support?
 ANSWER: centrioles
 The correct answer is cytoskeleton.
-What is the fluid inside a cell surroudning the nucleus?
+What is the fluid inside a cell surrounding the nucleus?
 ANSWER: cytoplasm
 CORRECT!
 What controls the cell's operations?
