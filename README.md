@@ -32,7 +32,7 @@ We will then create a fully-featured Study Buddy application which encompasses b
 ![image](https://github.com/mytechnotalent/MicroPython-micro-bit_Study_Buddy/blob/main/schematic.png?raw=true)
 
 ## Parts
-[micro:bit](COMING NOVEMBER 2020)
+[micro:bit](https://microbit.org/buy/?location=US&version=microbitV2)
 
 ## STEP 1: Navigate To The FREE micro:bit Python Web Editor
 [micro:bit Python Web Editor](https://python.microbit.org/v/beta)<br><br>
