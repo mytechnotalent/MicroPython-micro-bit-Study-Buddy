@@ -196,7 +196,6 @@ sc_teq_m = {
                 ]
            }
 
-
 # Customize bot speaking speed
 SPEED = 95
 
