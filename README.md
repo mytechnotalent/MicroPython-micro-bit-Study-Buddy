@@ -98,12 +98,14 @@ SPEED = 95
 
 def bot(ted, question):
     """Bot function
+    
     Parameters
     ----------
     ted : dict
         Talking educational database to utilize
     question : str
         Question to parse for trigger words
+        
     Returns
     -------
     None
@@ -159,10 +161,12 @@ def bot(ted, question):
         
 def quiz_f(teq):
     """Fill in the blank quiz function
+    
     Parameters
     ----------
     teq : dict
         Talking educational quiz to utilize
+        
     Returns
     -------
     None
@@ -233,10 +237,12 @@ def quiz_f(teq):
     
 def quiz_m(teq):
     """Multiple choice quiz function
+    
     Parameters
     ----------
     teq : dict
         Talking educational quiz to utilize
+        
     Returns
     -------
     None
