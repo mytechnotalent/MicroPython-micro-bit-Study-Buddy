@@ -4,6 +4,12 @@
 # Study Buddy
 The micro:bit Study Buddy is a micro:bit Electronic Educational Engagement Tool designed to help students learn a new classroom subject with the assistance of a micro:bit TED (Talking Educational Database) and a micro:bit TEQ (Talking Educational Quiz).
 
+<br> 
+
+## DEMO VIDEO - WATCH NOW [HERE](https://youtu.be/0OG5Vfdh5bM) ON YOUTUBE
+
+<br>
+
 ## Mission Statement
 Over the next 10 years we are going to see a fundamental transformation of technology in a way never before seen in history.  
 
