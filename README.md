@@ -420,6 +420,7 @@ I would LOVE for you to try again!
 ![image](https://github.com/mytechnotalent/MicroPython-micro-bit_Study_Buddy/blob/main/STEP%2014.png?raw=true)
 
 ## STEP 15: Populate Our State Capital Database
+![image](https://github.com/mytechnotalent/MicroPython-micro-bit_Study_Buddy/blob/main/STEP%2015.png?raw=true)
 Close serial and return to the Python Web Editor. Delete our `generic_ted` database and replace it with the following database.
 ```python
 # State capital talking educational database
