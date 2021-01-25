@@ -356,8 +356,8 @@ def quiz_m(teq):
     time.sleep(1)
     
     gc.collect()
-
 ```
+
 ![image](https://github.com/mytechnotalent/MicroPython-micro-bit_Study_Buddy/blob/main/STEP%207.png?raw=true)
 
 ## STEP 8: Rename Script Name To sb_template
