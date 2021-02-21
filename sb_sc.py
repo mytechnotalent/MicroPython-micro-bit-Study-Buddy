@@ -200,36 +200,25 @@ sc_teq_m = {
 SPEED = 95
 
 
-def bot(ted, question):
-    """Bot function
+def bot_proc(ted, question):
+    """Bot proc function
 
-    Parameters
-    ----------
-    ted : dict
-        Talking educational database to utilize
-    question : str
-        Question to parse for trigger words
-
-    Returns
-    -------
-    None
+    Params:
+        ted: dict
+        question: str
     """
     # Init LED happy image 
     display.show(Image.HAPPY)
-
     # This is an advanced topic as well however this little function
     # cleans out the unnecessary global objects or variables on what
     # we call the heap area in memory
     gc.collect()
-    
     # Init response object
     response = ''
-    
     # We want to make sure that our dictionary database can 
     # find all values even if you use a capital letter
     # so we convert everything to lowercase 
     question = question.lower()
-    
     # If you type something other than an empty string that means 
     # question has a value so the rest of the code will continue
     # on
@@ -240,9 +229,7 @@ def bot(ted, question):
         # match an entry in the dictionary database and if it does
         # put the value in the _response object
         response = [val for key, val in ted.items() if key in question]
-        
         gc.collect()
-        
         # If our bot got a response from us then make sure
         # we trigger the speaking or suprised image so our bot
         # can open its mouth to talk and then have our bot
@@ -259,33 +246,23 @@ def bot(ted, question):
             print('BOT: That is not something I am familiar with.')
             say('That is not something I am familiar with.', speed=SPEED)
             display.show(Image.HAPPY)
-            
     gc.collect()
         
         
-def quiz_f(teq):
-    """Fill in the blank quiz function
+def quiz_f_proc(teq):
+    """Fill in the blank quiz proc function
 
-    Parameters
-    ----------
-    teq : dict
-        Talking educational quiz to utilize
-
-    Returns
-    -------
-    None
+    Params:
+        teq: dict
     """
     # Init LED happy image 
     display.show(Image.HAPPY)
-
     # This is an advanced topic as well however this little function
     # cleans out the unnecessary global objects or variables on what
     # we call the heap area in memory
     gc.collect()
-    
     # Init score object
     score = 0
-    
     # Here we iterate through our quiz database
     for key in teq:
         print(key)
@@ -307,7 +284,6 @@ def quiz_f(teq):
             display.show(Image.HAPPY)
         time.sleep(1)
         gc.collect()
-    
     # Here we reply to the student their score
     display.show(Image.SURPRISED)
     print('You got {0} out of {1} correct!'.format(score, len(teq)))
@@ -316,7 +292,6 @@ def quiz_f(teq):
     say('out of', speed=SPEED)
     say(str(len(teq)), speed=SPEED)
     say('correct!', speed=SPEED)
-    
     # If student got a perfect score respond appropriately
     # or provide an encouring message to retry the quiz
     if score == len(teq):
@@ -332,36 +307,25 @@ def quiz_f(teq):
         say('You are doing a great job!', speed=SPEED)
         print('I would LOVE for you to try again!')
         say('I would LOVE for you to try again!', speed=SPEED)
-        
     # Display happy response at the end of the quiz
     display.show(Image.HAPPY)
-    
     gc.collect()
     
     
-def quiz_m(teq):
-    """Multiple choice quiz function
+def quiz_m_proc(teq):
+    """Multiple choice quiz proc function
 
-    Parameters
-    ----------
-    teq : dict
-        Talking educational quiz to utilize
-
-    Returns
-    -------
-    None
+    Parames:
+        teq: dict
     """
     # Init LED happy image 
     display.show(Image.HAPPY)
-
     # This is an advanced topic as well however this little function
     # cleans out the unnecessary global objects or variables on what
     # we call the heap area in memory
     gc.collect()
-    
     # Init score object
     score = 0
-    
     # Here we iterate through our quiz database with multiple
     # choice items
     for key in teq:
@@ -420,7 +384,6 @@ def quiz_m(teq):
             display.show(Image.HAPPY)
         time.sleep(1)
         gc.collect()
-    
     # Here we reply to the student their score
     display.show(Image.SURPRISED)
     print('You got {0} out of {1} correct!'.format(score, len(teq)))
@@ -431,7 +394,6 @@ def quiz_m(teq):
     say('correct!', speed=SPEED)
     display.show(Image.HAPPY)
     time.sleep(1)
-    
     # If student got a perfect score respond appropriately
     # or provide an encouring message to retry the quiz
     display.show(Image.SURPRISED)
@@ -448,9 +410,7 @@ def quiz_m(teq):
         say('You are doing a great job!', speed=SPEED)
         print('I would LOVE for you to try again!')
         say('I would LOVE for you to try again!', speed=SPEED)
-        
     # Display happy response at the end of the quiz
     display.show(Image.HAPPY)
     time.sleep(1)
-    
     gc.collect()
