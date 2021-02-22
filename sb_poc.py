@@ -119,7 +119,7 @@ def bot_proc(ted, question):
     
     Params:
         ted: dict
-        question : str   
+        question: str   
     """
     # Init LED happy image 
     display.show(Image.HAPPY)
