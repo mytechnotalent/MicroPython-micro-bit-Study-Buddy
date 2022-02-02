@@ -102,8 +102,9 @@ generic_teq_m = {
 SPEED = 95
 
 
-def bot_proc(ted, question):
-    """Bot proc function
+def bot(ted, question):
+    """
+    Function to handle bot
     
     Params:
         ted: dict
@@ -151,8 +152,9 @@ def bot_proc(ted, question):
     gc.collect()
         
         
-def quiz_f_proc(teq):
-    """Fill in the blank quiz proc function
+def quiz_f(teq):
+    """
+    Function to handle fill in the blank quiz
     
     Params:
         teq: dict
@@ -214,8 +216,9 @@ def quiz_f_proc(teq):
     gc.collect()
     
     
-def quiz_m_proc(teq):
-    """Multiple choice quiz proc function
+def quiz_m(teq):
+    """
+    Function to handle multiple choice quiz
     
     Params:
         teq: dict
